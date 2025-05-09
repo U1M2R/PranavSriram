@@ -25,26 +25,28 @@
 							<nav id="nav">
 								<ul>
 									<li id="projects-menu">
-										<a href="#">Projects</a>
+										<a href="#projects">Projects</a>
 										<ul>
 											<li id="predictive-analytics-item">
-												<a href="pred_anal.html">Predictive Analytics</a>
+												<a href="#" onclick="openOverlay('pred_anal.html'); return false;">Predictive Analytics</a>
 												<ul>
-													<li><a href="B.html">Generating predictive alerts for customer events </a></li>
-													<li><a href="A.html">Identifying new customers for brand product</a></li>
+													<li><a href="#" onclick="openOverlay('B.html'); return false;">Generating predictive alerts for customer events </a></li>
+													<li><a href="#" onclick="openOverlay('A.html'); return false;">Identifying new customers for brand product</a></li>
 													
-													<li><a href="pred_anal.html">Predicting customer adherence to brand product</a></li>
+													<li><a href="#" onclick="openOverlay('C.html'); return false;">Predicting customer adherence to brand product</a></li>
 												</ul>
 											</li>
-											<li><a href="T.html">Tapping high-value customers in future quarters</a></li>
-											<li><a href="FC.html">Using ML to find undiagnosed Hepatitis C cases</a></li>
-											<li><a href="clust.html">Clustering analysis for customer segmentation</a></li>
+											<li><a href="#" onclick="openOverlay('S.html'); return false;">Technical Health Score for Salesforce</a></li>
+											<li><a href="#" onclick="openOverlay('P.html'); return false;">Reddit's Random Acts of Pizza</a></li>
+											<li><a href="#" onclick="openOverlay('FC.html'); return false;">Finding Undiagnosed Hepatitis-C Virus</a></li>
+											<li><a href="#" onclick="openOverlay('T.html'); return false;">Tapping High-Value Customers in Future Quarters</a></li>
+											<li><a href="#" onclick="openOverlay('clust.html'); return false;">Unsupervised Learning for Customer Segmentation</a></li>
 											
 										</ul>
 									</li>
-									<li><a href="left-sidebar.html">Work Experience</a></li>
-									<li class="break"><a href="right-sidebar.html">Education</a></li>
-									<li><a href="no-sidebar.html">About Me</a></li>
+									<li><a href="#" onclick="openOverlay('left-sidebar.html'); return false;">Work Experience</a></li>
+									<li class="break"><a href="#" onclick="openOverlay('right-sidebar.html'); return false;">Education</a></li>
+									<li><a href="#" onclick="openOverlay('no-sidebar.html'); return false;">About Me</a></li>
 								</ul>
 							</nav>
 
@@ -65,7 +67,7 @@
 							MS Business Analytics,
 							University of Washington
 							<ul class="actionspecial">
-								<li><a href="#projects" class="button">Project Spotlight</a></li>
+								<li><a href="#projects" class="button">View Projects</a></li>
 							</ul>
 						</section>
 
@@ -83,78 +85,136 @@
 					<div class="container">
 						<div class="row">
 							<section class="col-6 col-12-narrower feature">
-								<div class="image-wrapper first">
-									<a class="image featured first"><img src="images/predictive-analytics.png" alt="" /></a>
+								<div class="image-wrapper">
+									<a href="#" class="image featured" onclick="openOverlay('pred_anal.html'); return false;"><img src="images/pdps.jpg" alt="" /></a>
 								</div>
 								<header>
 									<h2>Predictive Analytics</h2>
 								</header>
-								<p>A series of predictive analytics projects implemented for one of the largest pharmaeutical companies in the US, 
+								<p>A collection of predictive analytics projects implemented for one of the largest pharmaeutical companies in the US, 
 								helping their commercial salesforce improve customer targeting for various brand products.</p>
 								<ul class="actions">
-									<li><a href="pred_anal.html" class="button">View Projects</a></li>
+									<li><a href="#" class="button" onclick="openOverlay('pred_anal.html'); return false;">View Collection</a></li>
 								</ul>
 							</section>
 							<section class="col-6 col-12-narrower feature">
 								<div class="image-wrapper">
-									<a href="clust.html" class="image featured"><img src="images/seg1.jpg" alt="" /></a>
+									<a href="#" class="image featured" onclick="openOverlay('S.html'); return false;"><img src="images/Opinion-Salesforce-CRM.jpg" alt="" /></a>
 								</div>
 								<header>
-									<h2>Unsupervised Learning</h2>
+									<h2>Technical Health Score</h2>
 								</header>
 								<p>Clustering analysis to understand if customers can be segmented based on their purchase behavior and other attributes 
-									for primary market research of a new product launch. </p>
+								for primary market research of a new product launch.</p>
 								<ul class="actions">
+									<li><a href="#" class="button" onclick="openOverlay('S.html'); return false;">Read More</a></li>
 								</ul>
 							</section>
 						</div>
 					</div>
 				</div>
-<!--
-			 Promo 
+				<!--Second Row-->
+				<div class="wrapper_mid">
+					<div class="container">
+						<div class="row">
+							<section class="col-6 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured" onclick="openOverlay('P.html'); return false;"><img src="images/reddit.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h2>Reddit's Random Acts of Pizza</h2>
+								</header>
+								<p>A sentiment analysis (NLP) of posts on the subreddit r/Random Acts of Pizza in order to find key drivers of success and how users can craft a post that maximizes their chances of getting a free pizza! </p>
+								<ul class="actions">
+									<li><a href="#" class="button" onclick="openOverlay('P.html'); return false;">Read More</a></li>
+								</ul>	
+							</section>
+							<section class="col-6 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured" onclick="openOverlay('FC.html'); return false;"><img src="images/fda.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h2>Undiagnosed Hepatits-C Virus</h2>
+								</header>
+								<p>Leveraging AI/ML techniques to enable a major health system efficiently screen and identify undiagnosed Hepatitis-C patients in partnership with the United States Food and Drug Administration (FDA).</p>
+								<ul class="actions">
+									<li><a href="#" class="button" onclick="openOverlay('FC.html'); return false;">Read More</a></li>
+								</ul>
+							</section>							
+						</div>
+					</div>
+				</div>
+				<!--Third Row-->
+				<div class="wrapper_mid">
+					<div class="container">
+						<div class="row">
+							<section class="col-6 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured" onclick="openOverlay('T.html'); return false;"><img src="images/tapping.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h2>Tapping High-Value Customers</h2>
+								</header>
+								<p>Analyzing erratic purchase behaviour patterns of different customer groups and identifying high-value customers to capture the right opportunity for future quarters using machine learning and casusal inference.</p>
+								<ul class="actions">
+									<li><a href="#" class="button" onclick="openOverlay('T.html'); return false;">Read More</a></li>
+								</ul>			
+							</section>
+							<section class="col-6 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured" onclick="openOverlay('clust.html'); return false;"><img src="images/clusters.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h2>Unsupervised Learning</h2>
+								</header>
+								<p>Clustering analysis to understand if customers can be segmented based on their purchase behavior and other attributes 
+								for primary market research of a new product launch. </p>
+								<ul class="actions">
+									<li><a href="#" class="button" onclick="openOverlay('clust.html'); return false;">Read More</a></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				</div>
+			 <!-- Promo -->
 				<div id="promo-wrapper">
 					<section id="promo">
-						<h2>Neque semper magna et lorem ipsum adipiscing</h2>
-						<a href="#" class="button">Breach the thresholds</a>
+						<h2>Learn more about my background!</h2>
+						<!-- <a href="#" class="button">Breach the thresholds</a> -->
 					</section>
 				</div>
 
-			 Features 2 
+			 
 				<div class="wrapper">
 					<section class="container">
-						<header class="major">
-							<h2>Sed magna consequat lorem curabitur tempus</h2>
-							<p>Elit aliquam vulputate egestas euismod nunc semper vehicula lorem blandit</p>
-						</header>
 						<div class="row features">
 							<section class="col-4 col-12-narrower feature">
-								<div class="image-wrapper first">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								<div class="image-wrapper">
+									<a href="#" class="image featured" onclick="openOverlay('left-sidebar.html'); return false;"><img src="images/ZS-1.jpg" alt="" /></a>
 								</div>
-								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<header>
+									<h2>Work Experience</h2>
+								</header>
 							</section>
 							<section class="col-4 col-12-narrower feature">
 								<div class="image-wrapper">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+									<a href="#" class="image featured" onclick="openOverlay('right-sidebar.html'); return false;"><img src="images/foster.png" alt="" /></a>
 								</div>
-								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<header>
+									<h2>Education</h2>
+								</header>
 							</section>
 							<section class="col-4 col-12-narrower feature">
 								<div class="image-wrapper">
-									<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+									<a href="#" class="image featured" onclick="openOverlay('no-sidebar.html'); return false;"><img src="images/skills.jpg" alt="" /></a>
 								</div>
-								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
-								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<header>
+									<h2>Skills and Expertise</h2>
+								</header>
 							</section>
 						</div>
-						<ul class="actions major">
-							<li><a href="#" class="button">Elevate my awareness</a></li>
-						</ul>
 					</section>
 				</div>
--->
 			<!-- Footer -->
 				<div id="footer-wrapper">
 					<div id="footer" class="container">
@@ -271,5 +331,120 @@
 				}
 				}
 			</script>
+
+		<style>
+			#modalOverlay {
+			display: none;
+			position: fixed;
+			top: 0; left: 0;
+			width: 100%; height: 100%;
+			background-color: rgba(0, 0, 0, 0.75);
+			justify-content: center;
+			align-items: center;
+			z-index: 10000;
+			transition: opacity 0.3s ease;
+			}
+		
+			#modalOverlay.show {
+			display: flex;
+			animation: fadeIn 0.3s forwards;
+			}
+		
+			#modalContent {
+			background: white;
+			padding: 30px;
+			max-width: 90%;
+			max-height: 90%;
+			overflow: auto;
+			border-radius: 10px;
+			position: relative;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+			}
+		
+			#modalContent::-webkit-scrollbar {
+			width: 6px;
+			}
+		
+			#modalContent::-webkit-scrollbar-thumb {
+			background-color: #999;
+			border-radius: 3px;
+			}
+		
+			#modalClose {
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			font-size: 24px;
+			cursor: pointer;
+			}
+		
+			@keyframes fadeIn {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+			}
+		
+			@media screen and (max-width: 600px) {
+			#modalContent {
+				padding: 15px;
+				width: 95%;
+			}
+			}
+		</style>
+		
+		<div id="modalOverlay" onclick="handleOutsideClick(event)">
+			<div id="modalContent">
+			<span id="modalClose" onclick="closeOverlay()">&times;</span>
+			<div id="modalInner">Loading...</div>
+			</div>
+		</div>
+		
+		<script>
+			function openOverlay(url) {
+			const overlay = document.getElementById('modalOverlay');
+			const inner = document.getElementById('modalInner');
+			inner.innerHTML = 'Loading...';
+			overlay.classList.add('show');
+		
+			// Push state to history (so Back button can close it)
+			history.pushState({ overlay: true }, '', '#overlay');
+		
+			fetch(url)
+				.then(response => response.text())
+				.then(html => {
+				const parser = new DOMParser();
+				const doc = parser.parseFromString(html, 'text/html');
+				const bodyContent = doc.querySelector('body');
+				inner.innerHTML = bodyContent ? bodyContent.innerHTML : 'Content could not be loaded.';
+				})
+				.catch(() => {
+				inner.innerHTML = 'Failed to load content.';
+				});
+			}
+		
+			function closeOverlay(pushStateBack = false) {
+			const overlay = document.getElementById('modalOverlay');
+			overlay.classList.remove('show');
+			document.getElementById('modalInner').innerHTML = '';
+		
+			if (pushStateBack && history.state?.overlay) {
+				history.back(); // Go back one step to simulate closing
+			}
+			}
+		
+			function handleOutsideClick(event) {
+			if (event.target.id === 'modalOverlay') {
+				closeOverlay(true); // Triggers back button effect
+			}
+			}
+		
+			// Listen for back button
+			window.addEventListener('popstate', function(event) {
+			if (!event.state || !event.state.overlay) {
+				closeOverlay(); // Close if not in overlay state
+			}
+			});
+		</script>	
+
+
 	</body>
 </html>
